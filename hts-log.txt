@@ -1,0 +1,24 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 19 Jan 2024 13:24:54 at https://app.surveoo.com +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://app.surveoo.com -O1 "C:\Users\brian\Desktop\brin\brayo\servey" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+13:24:57	Warning: 	Moved Permanently for https://app.surveoo.com/robots.txt
+13:24:57	Warning: 	File has moved from https://app.surveoo.com/robots.txt to /en/robots.txt
+13:24:58	Warning: 	Moved Permanently for https://app.surveoo.com/
+13:24:58	Warning: 	File has moved from https://app.surveoo.com/ to /en/
+13:24:58	Warning: 	Found for https://app.surveoo.com/en/
+13:24:58	Warning: 	File has moved from https://app.surveoo.com/en/ to https://app.surveoo.com/en/login?
+13:25:43	Warning: 	Moved Permanently for https://app.surveoo.com/?welcome
+13:25:43	Warning: 	File has moved from https://app.surveoo.com/?welcome to /en/?welcome
+13:25:45	Error: 	"Not Found" (404) at link https://app.surveoo.com/en/assets/plugins/global/fonts/@fontawesome/fa-brands-400.eot (from https://cdn-app.surveoo.com/assets/plugins/global/plugins.bundle.css?v=1)
+13:25:45	Error: 	"Not Found" (404) at link https://app.surveoo.com/en/assets/plugins/global/fonts/@fontawesome/fa-regular-400.eot (from https://cdn-app.surveoo.com/assets/plugins/global/plugins.bundle.css?v=1)
+13:25:45	Error: 	"Not Found" (404) at link https://app.surveoo.com/en/assets/plugins/global/fonts/@fontawesome/fa-solid-900.eot (from https://cdn-app.surveoo.com/assets/plugins/global/plugins.bundle.css?v=1)
+13:25:47	Warning: 	Found for https://app.surveoo.com/en/?welcome
+13:25:47	Warning: 	File has moved from https://app.surveoo.com/en/?welcome to https://app.surveoo.com/en/login?welcome=
+
+HTTrack Website Copier/3.49-2 mirror complete in 53 seconds : 80 links scanned, 72 files written (14654840 bytes overall) [5493960 bytes received at 103659 bytes/sec], 12748567 bytes transferred using HTTP compression in 46 files, ratio 27%, 9.5 requests per connection
+(3 errors, 10 warnings, 0 messages)

@@ -1,0 +1,301 @@
+@charset "UTF-8";
+.no-result {
+  font-size: 16px;
+}
+.no-result .lead-text {
+  max-width: 860px;
+  margin: auto;
+}
+.no-result .highlighted {
+  color: white;
+  position: relative;
+  z-index: 1;
+  padding: 0 5px;
+}
+.no-result .highlighted:before {
+  background: #6f448a;
+  z-index: -1;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: skewY(-2deg);
+}
+.no-result .separator-text {
+  position: relative;
+  text-align: center;
+}
+.no-result .separator-text:before {
+  content: "";
+  height: 5px;
+  background: #6f448a;
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-radius: 3px;
+  top: calc(50% - 3px);
+}
+.no-result .separator-text span {
+  display: inline-block;
+  background: #EEF0F8;
+  position: relative;
+  z-index: 1;
+  padding: 0 12px;
+  font-size: 16px;
+  font-weight: 900;
+  color: #6f448a;
+}
+.no-result .offers-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.no-result .offers-list li {
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 6px 1px rgba(1, 1, 1, 0.1);
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 30px;
+}
+.no-result .offers-list li .left-part {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.no-result .offers-list li .left-part .logo-wrapper {
+  border-right: 1px solid #d5d5d5;
+  padding: 10px 18px;
+  height: 100%;
+  display: flex;
+}
+.no-result .offers-list li .left-part .logo-wrapper img {
+  width: 128px;
+  height: 101px;
+  object-fit: contain;
+  margin: auto;
+}
+.no-result .offers-list li .left-part .details {
+  height: 100%;
+  border-right: 1px solid #d5d5d5;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.no-result .offers-list li .left-part .details .details-inner {
+  margin: auto 0;
+  padding: 10px 23px;
+}
+.no-result .offers-list li .left-part .details .title {
+  color: #1e1e2d;
+  font-weight: 900;
+  margin-bottom: 0.3em;
+}
+.no-result .offers-list li .left-part .details .description {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+.no-result .offers-list li .left-part .ratings-wrapper {
+  padding: 0 30px;
+}
+.no-result .offers-list li .left-part .ratings-wrapper .average-rating {
+  position: relative;
+  appearance: none;
+  color: transparent;
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 25px;
+}
+.no-result .offers-list li .left-part .ratings-wrapper .average-rating::before {
+  --percent: calc(var(--rating)/5*100%);
+  content: "★★★★★";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #6f448a var(--percent), #b7a1c4 var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.no-result .offers-list li .go-btn {
+  background: url("https://cdn-app.surveoo.com/assets/media/go-btn-bg.svg") no-repeat left center;
+  background-size: cover;
+  padding-left: 37px;
+  display: flex;
+  color: white;
+}
+.no-result .offers-list li .go-btn:hover {
+  color: #6f448a;
+}
+.no-result .offers-list li .go-btn span {
+  margin: auto;
+  display: block;
+  padding: 0 40px;
+  font-size: 45px;
+  font-weight: bold;
+}
+@media (max-width: 992px) {
+  .no-result .offers-list li {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .no-result .offers-list li .left-part {
+    flex-wrap: wrap;
+  }
+  .no-result .offers-list li .left-part .logo-wrapper {
+    order: 0;
+    width: 50%;
+  }
+  .no-result .offers-list li .left-part .ratings-wrapper {
+    order: 1;
+    padding: 0 10px;
+    width: 50%;
+    text-align: center;
+  }
+  .no-result .offers-list li .left-part .ratings-wrapper .average-rating {
+    font-size: 20px;
+  }
+  .no-result .offers-list li .left-part .details {
+    order: 2;
+    width: 100%;
+    border-right: none;
+  }
+  .no-result .offers-list li .left-part .details .details-inner {
+    padding: 10px;
+  }
+  .no-result .offers-list li .left-part .details .title {
+    font-size: 14px;
+  }
+  .no-result .offers-list li .left-part .details .description {
+    font-size: 12px;
+  }
+  .no-result .offers-list li .go-btn {
+    background: #1e1e2d;
+    border-radius: 8px;
+    padding-left: 0;
+  }
+  .no-result .offers-list li .go-btn span {
+    font-size: 28px;
+  }
+}
+
+.dashboard .gains {
+  text-align: center;
+}
+.dashboard .gains .btn {
+  margin: 15px 0;
+}
+.dashboard .gains .amount {
+  font-size: 30px;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+.surveybox {
+  margin-bottom: 25px;
+}
+.surveybox .card-title i {
+  margin-right: 6px;
+}
+.surveybox .subdesc {
+  display: block;
+  margin-bottom: 10px;
+}
+.surveybox .provider {
+  position: absolute;
+  bottom: 4px;
+  display: block;
+  right: 10px;
+  border: 10px;
+  text-align: right;
+  font-weight: lighter;
+  font-size: 10px;
+  color: #0266b2;
+}
+.surveybox .card-title {
+  font-size: 1.55rem !important;
+  font-weight: 600 !important;
+}
+
+.menu-item .vignette {
+  position: absolute;
+  left: 37px;
+}
+.menu-item .cash {
+  margin-left: 10px;
+}
+
+.swal2-popup .container-payout .swal2-html-container {
+  max-height: unset;
+  overflow: auto;
+}
+
+#kt_header_mobile button i {
+  color: white;
+}
+#kt_header_mobile #kt_aside_mobile_toggle .vignette {
+  position: absolute;
+  top: 9px;
+  right: 3px;
+}
+
+.vacances {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+a[aria-disabled=true] {
+  pointer-events: none;
+  text-decoration: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.flou {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.disabled.day {
+  opacity: 0.3;
+}
+
+.imgInstitute {
+  width: 172px;
+  height: auto;
+}
+
+#kt_notif {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+}
+#kt_notif .txt span {
+  color: #6f448a;
+}
+
+.card.card-a {
+  margin-top: 16px;
+  border: 2px solid #6f448a;
+  border-radius: 0px 0.42rem 0.42rem;
+}
+.card.card-a > span {
+  position: absolute;
+  color: white;
+  font-size: 10px;
+  background: #6f448a;
+  padding: 2px 15px;
+  top: -20px;
+  left: -2px;
+}
+
+/*# sourceMappingURL=custom.css.map */

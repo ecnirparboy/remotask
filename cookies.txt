@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.surveoo.com	TRUE	/	FALSE	1999999999	PHPSESSID	muubschge8ltdhttht025omd5q
+surveoo.com	TRUE	/	FALSE	1999999999	lang	en_EN
+
